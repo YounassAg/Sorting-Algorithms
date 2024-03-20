@@ -1,12 +1,4 @@
 def selection_sort(data):
-  """Sorts a list of data in ascending order using selection sort.
-
-  Args:
-    data: A list of sortable elements.
-
-  Returns:
-    The sorted list.
-  """
   for i in range(len(data)):
     # Set the current element as the minimum (index-wise)
     min_index = i
@@ -19,7 +11,6 @@ def selection_sort(data):
       data[i], data[min_index] = data[min_index], data[i]
   return data
 
-# Example usage
 unsorted_data = [5, -2, 7, 3, 9, 6, -5, -3, 10, -4, 4, 0, 2, 1, -1, 8]
 print("Unsorted:", unsorted_data)
 sorted_data = selection_sort(unsorted_data)
